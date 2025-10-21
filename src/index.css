@@ -8,54 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Dark futuristic theme - deep slate to purple gradients */
-    --background: 222 47% 11%;
-    --background-secondary: 217 33% 17%;
-    --foreground: 210 40% 98%;
+    /* Dark forest theme - deep blacks with forest and electric green */
+    --background: 140 15% 6%;
+    --background-secondary: 140 20% 10%;
+    --foreground: 120 10% 95%;
 
-    --card: 222 47% 11%;
-    --card-foreground: 210 40% 98%;
-    --card-glass: 222 47% 11% / 0.6;
+    --card: 140 15% 8%;
+    --card-foreground: 120 10% 95%;
+    --card-glass: 140 15% 8% / 0.6;
 
-    --popover: 222 47% 15%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 140 20% 10%;
+    --popover-foreground: 120 10% 95%;
 
-    /* Vibrant purple primary */
-    --primary: 258 90% 66%;
-    --primary-foreground: 210 40% 98%;
-    --primary-glow: 258 90% 66% / 0.3;
+    /* Electric green primary */
+    --primary: 120 100% 50%;
+    --primary-foreground: 140 15% 6%;
+    --primary-glow: 120 100% 50% / 0.4;
 
-    /* Cyan accent */
-    --secondary: 189 94% 43%;
-    --secondary-foreground: 210 40% 98%;
-    --secondary-glow: 189 94% 43% / 0.3;
+    /* Forest green secondary */
+    --secondary: 140 60% 40%;
+    --secondary-foreground: 120 10% 95%;
+    --secondary-glow: 140 60% 40% / 0.3;
 
-    --muted: 217 33% 25%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 140 15% 18%;
+    --muted-foreground: 140 10% 60%;
 
-    --accent: 258 90% 66%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 120 100% 50%;
+    --accent-foreground: 140 15% 6%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 120 10% 95%;
 
     --success: 142 71% 45%;
-    --success-foreground: 210 40% 98%;
+    --success-foreground: 120 10% 95%;
 
-    --border: 217 33% 25%;
-    --input: 217 33% 20%;
-    --ring: 258 90% 66%;
+    --border: 140 25% 20%;
+    --input: 140 20% 12%;
+    --ring: 120 100% 50%;
 
     --radius: 0.75rem;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(258 90% 66%), hsl(189 94% 43%));
-    --gradient-background: linear-gradient(180deg, hsl(222 47% 11%), hsl(217 33% 17%));
-    --gradient-glow: radial-gradient(circle at 50% 0%, hsl(258 90% 66% / 0.15), transparent 50%);
+    --gradient-primary: linear-gradient(135deg, hsl(120 100% 50%), hsl(140 60% 40%));
+    --gradient-background: linear-gradient(180deg, hsl(140 15% 6%), hsl(140 20% 10%));
+    --gradient-glow: radial-gradient(circle at 50% 0%, hsl(120 100% 50% / 0.15), transparent 50%);
 
     /* Shadows & Effects */
     --shadow-glow: 0 0 40px hsl(var(--primary-glow));
-    --shadow-card: 0 10px 30px -10px hsl(222 47% 5% / 0.5);
+    --shadow-card: 0 10px 30px -10px hsl(140 15% 3% / 0.8);
     --backdrop-blur: blur(12px);
 
     /* Animations */
@@ -70,7 +70,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(180deg, hsl(222 47% 11%), hsl(217 33% 17%));
+    background: linear-gradient(180deg, hsl(140 15% 6%), hsl(140 20% 10%));
     background-attachment: fixed;
     font-feature-settings: "liga" 1, "calt" 1;
   }
