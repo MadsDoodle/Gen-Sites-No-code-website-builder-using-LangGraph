@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Sparkles } from "lucide-react";
+import AnimatedBackground from "@/components/AnimatedBackground";
 import PromptInput from "@/components/PromptInput";
 import ProgressTracker from "@/components/ProgressTracker";
 import ResultsDisplay from "@/components/ResultsDisplay";
 import ErrorDisplay from "@/components/ErrorDisplay";
-import AnimatedBackground from "@/components/AnimatedBackground";
 import { toast } from "sonner";
 import heroImage from "@/assets/hero-bg.jpg";
 
@@ -109,8 +109,12 @@ export default function Index() {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Animated Background */}
-      <AnimatedBackground />
+      {/* Background Effects */}
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-secondary/5" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-secondary/10 rounded-full blur-3xl" />
+      </div>
 
       <div className="container mx-auto px-4 py-8 sm:py-12">
         {/* Hero Section */}

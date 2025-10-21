@@ -8,7 +8,7 @@ export default function AnimatedBackground() {
       
       {/* Wireframe grid */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0" style={{
+        <div className="absolute inset-0 animate-grid-pan" style={{
           backgroundImage: `
             linear-gradient(to right, hsl(var(--primary) / 0.1) 1px, transparent 1px),
             linear-gradient(to bottom, hsl(var(--primary) / 0.1) 1px, transparent 1px)
@@ -16,24 +16,6 @@ export default function AnimatedBackground() {
           backgroundSize: '80px 80px',
         }} />
       </div>
-
-      {/* Floating bubbles */}
-      {[...Array(8)].map((_, i) => (
-        <div
-          key={i}
-          className="absolute rounded-full animate-float"
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-            width: `${Math.random() * 100 + 50}px`,
-            height: `${Math.random() * 100 + 50}px`,
-            background: `radial-gradient(circle, hsl(var(--primary) / ${Math.random() * 0.1 + 0.05}), transparent)`,
-            border: `1px solid hsl(var(--primary) / ${Math.random() * 0.2 + 0.1})`,
-            animationDelay: `${i * 0.5}s`,
-            animationDuration: `${Math.random() * 10 + 15}s`,
-          }}
-        />
-      ))}
 
       {/* Floating particles */}
       {[...Array(20)].map((_, i) => (
@@ -48,13 +30,6 @@ export default function AnimatedBackground() {
           }}
         />
       ))}
-
-      {/* Scanning line effect */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div 
-          className="absolute w-full h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-30 animate-scan"
-        />
-      </div>
     </div>
   );
 }
