@@ -10,7 +10,7 @@ The landing page where the entire journey starts.. currently its a single turn a
 
 After running the entire workflow using your API_KEY he output will be generated in the following window
 
-![Output](src/assets/output.png)
+![Output](src/assets/output_window.png)
 
 ## Workflow
 
