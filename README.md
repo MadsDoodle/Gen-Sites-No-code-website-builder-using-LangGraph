@@ -2,6 +2,16 @@
 
 An AI-powered web development assistant built with LangGraph and OpenAI. This tool leverages advanced language models to automate website creation, file management, and project scaffolding within a secure, sandboxed environment.
 
+## Visual Interface
+
+The landing page where the entire journey starts.. currently its a single turn agent.. like one cannot reiterate over the output website i.e the history state isnt saved. But works ongoing and soon it would be integrated. 
+
+![Landing](src/assets/landing.png)
+
+After running the entire workflow using your API_KEY he output will be generated in the following window
+
+![Output](src/assets/output.png)
+
 ## Workflow
 
 The Web Builder uses a LangGraph-based architecture to process user requests through a series of AI agents. Below is a visual representation of the workflow:
